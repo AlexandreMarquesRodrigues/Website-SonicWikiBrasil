@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos / SonicWikiBrasil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/prositesonic.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .title-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .titulo {
+            color: white;
+            -webkit-text-stroke: 2px blue;
+            font-size: 48px;
+            text-shadow: 0 0 10px rgba(0,0,255,0.5);
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            filter: drop-shadow(0 0 5px rgba(0,0,255,0.7));
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        .central-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        button {
+            width: 209px;
+            height: 280px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            padding: 10px;
+        }
+
+        .voltar {
+            width: 100px;
+            height: 50px;
+        }
+
+        button:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+        }
+
+        .conteudo-normal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+
+        button img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .resumo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 10px;
+        }
+
+        button:hover .conteudo-normal {
+            opacity: 0;
+        }
+
+        button:hover .resumo {
+            opacity: 1;
+        }
+
+        .copyright {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+            margin-top: 40px;
+            font-weight: normal;
+            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="title-section">
+            <h1 class="titulo"><b>Sonic WikiBrasil</b></h1>
+            <img src="/img/Sonic_1991.png" alt="Sonic" class="logo">
+        </div>
+        <a href="index.html"><button class="voltar">Voltar</button></a>
+    </div>
+
+    <div class="central-content">
+        <button>
+            <div class="conteudo-normal">
+                Sonic The Hedgehog 1
+                <img src="/img/sonic1.png" alt="Sonic 1">
+            </div>
+            <div class="resumo">
+                O clássico jogo que apresentou Sonic ao mundo, correndo pelo Green Hill Zone para derrotar Dr. Robotnik.
+            </div>
+        </button>
+
+        <button>
+            <div class="conteudo-normal">
+                Sonic The Hedgehog 2
+                <img src="/img/sonic2.png" alt="Sonic 2">
+            </div>
+            <div class="resumo">
+                Continuação do sucesso, introduzindo Tails como parceiro de aventuras e novas fases desafiadoras.
+            </div>
+        </button>
+
+        <button>
+            <div class="conteudo-normal">
+                Sonic The Hedgehog 3 & Knuckles
+                <img src="/img/sonic3k.jpg" alt="Sonic 3 & Knuckles">
+            </div>
+            <div class="resumo">
+                Combinação de Sonic 3 e Sonic & Knuckles, permitindo novas habilidades e fases desbloqueáveis.
+            </div>
+        </button>
+        <button>
+            <div class="conteudo-normal">
+                Sonic Adventure DX
+                <img src="/img/sonicadventuredx.jpg" alt="Sonic Adventure DX">
+            </div>
+            <div class="resumo">
+                Sonic em 3D, com múltiplos personagens jogáveis e uma história épica para salvar o mundo de Dr. Robotnik.
+            </div>
+        </button>
+
+        <button class>
+            <div class="conteudo-normal">
+                Sonic Adventure 2: Battle
+                <img src="/img/sonicadventure2.webp" 
+                alt="Sonic Adventure 2"
+                width="1000">
+            </div>
+            <div class="resumo">
+                Segunda aventura 3D com foco em heróis e vilões, apresentando batalhas multiplayer e a icônica história de Shadow.
+            </div>
+        </button>
+
+        <button>
+            <div class="conteudo-normal">
+                Sonic Generations
+                <img src="/img/sonicgenerations.jpg" alt="Sonic Generations">
+            </div>
+            <div class="resumo">
+                Um jogo comemorativo que une Sonic clássico e moderno, revisitando fases icônicas com jogabilidade atualizada.
+            </div>
+        </button>
+    </div>
+
+    <div class="copyright">
+        <h3>© 2025 SEGA. Todos os direitos reservados.</h3>
+    </div>
+</body>
+</html>
